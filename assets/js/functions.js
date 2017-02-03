@@ -50,6 +50,7 @@ jQuery.extend(jQuery.validator.messages, {
 
 
 // FORM CONTROL
+// Style checkboxes/radio inputs
 // If mordern browser
 if ($('body').hasClass('modern')) {
     /* Checkboxes */
@@ -94,12 +95,12 @@ function curIndex() {
     return $sections.index($sections.filter('.current'));
 }
 
-// Prepare sections by setting the `data-group` attribute to 'block-0', 'block-1', etc.
+// Add index numbers to 'data-group'
 $sections.each(function(index, section) {
     $(section).find(':input').attr('data-group', 'group-' + index);
 });
 
-// Previous button is easy, just go back
+// Previous button
 $('.form-navigation .previous').click(function() {
   navigateTo(curIndex() - 1);
   $('#header h3 span').text(curIndex() + 1);
@@ -113,6 +114,7 @@ $('.form-navigation .next').click(function() {
     } else {
         //return false;
     }
+    // Scroll to top of page after each part
     $('body,html').animate({
         scrollTop : 0
     }, 300);
