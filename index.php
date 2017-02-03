@@ -20,7 +20,7 @@
 <!-- SCRIPTS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="assets/js/jquery.validate.min.js"></script>
-<script src="assets/js/functions.js"></script>
+<script src="assets/js/quick.survey.js"></script>
 
 </head>
 
@@ -43,7 +43,7 @@
 		<div id="p1" class="form-part current">
 			<div class="form-field">
 				<label for="name">Name</label>
-				<input type="text" name="name" placeholder="Joe" class="required" />
+				<input type="text" name="name" placeholder="Joe Smith" class="required" />
 			</div>
 			<div class="form-field">
 				<label for="phone">Phone</label>
